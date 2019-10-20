@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<header>
+		
+		<h2>Spam Detector For Emails</h2>
+
+	</header>
+
+	<div >
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		
+		<p>Enter Your Message Here</p>
+		
+		<textarea name="message" rows="6" cols="30"></textarea>
+		
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>	
+	</div>
+
+</body>
+</html>
